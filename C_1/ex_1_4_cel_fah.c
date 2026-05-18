@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+/* Prints a converstion table from Celsius to Fahrenheit */
+
+int main()
+{
+  float celsius, fahr, step, lower, upper;
+
+  lower = -17.8;
+  upper = 148.9;
+  step = 11;
+
+
+  celsius = lower;
+  while (celsius <= upper){
+    fahr = ((9.0/5.0) * celsius) + 32.0;
+    printf("%3.0f %6.1f\n", fahr, celsius);
+    celsius += step;
+  }
+}

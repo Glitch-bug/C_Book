@@ -1,0 +1,11 @@
+#include <stdio.h>
+
+
+/* Print Celsius to fahrenheit table */
+int main()
+{
+  float celsius;
+
+  for (celsius = -17.8; celsius <= 150; celsius += 11.1)
+    printf("%6.1f %3.0f\n", celsius, ((9.0/5.0)*celsius)+32);
+}
