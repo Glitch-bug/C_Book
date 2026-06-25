@@ -4,7 +4,7 @@
 
 int main(void)
 {
-  int c = 65;
+  int c;
+  putchar(c = 65);
 
-  putchar(c);
 }
